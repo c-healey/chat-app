@@ -3,16 +3,16 @@ import MsgBubble, {MsgBubblePrice, MsgBubbleImgs} from './MsgBubble';
 import './Phone.scss';
 const Phone =()=>{
     const imgArr  = [
-      "../images/dog-image-1.jpg",
-      "../images/dog-image-2.jpg",
-      "../images/dog-image-3.jpg",
+      "./images/dog-image-1.jpg",
+      "./images/dog-image-2.jpg",
+      "./images/dog-image-3.jpg",
     ];
    return (
     <div className="phone d-flex direction-row w-50  shadow">
     <div className=" phone-header align-items-center ">
       <i className="bi bi-chevron-left me-2"></i>
       <img
-        src="/images/avatar.jpg"
+        src="./images/avatar.jpg"
         alt="samuel green avatar"
         className="avatar me-2"
       />
