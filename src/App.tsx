@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="App container-fluid">
       <div className="row h-100 align-items-center">
-        <div className="col-lg phone-col align-self-center ">
+        <main className="col-lg phone-col align-self-center ">
           <Phone/>
-        </div>
-        <div className="col-lg text-col ">
+        </main>
+        <header className="col-lg text-col ">
           {/* <div className="w-75 mx-auto text-center "> */}
             <h1>Simple booking</h1>
             <p>
@@ -20,8 +20,12 @@ function App() {
               again all through the chat.
             </p>
           {/* </div> */}
-        </div>
+        </header>
       </div>
+      <div className="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
+    Coded by <a href="/">Catherine Healey</a>.
+  </div>
     </div>
   );
 }
