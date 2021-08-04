@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
+#frontend mentor files
+/chat-app-css-illustration-master
 # dependencies
 /node_modules
 /.pnp

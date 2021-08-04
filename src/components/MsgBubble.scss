@@ -1,0 +1,54 @@
+@import '../variables.scss';
+.msg {
+  &-left,
+  &-right,
+  &-price{
+    font-size:.75rem;
+    max-width: 70%;
+    border-radius: 1.125rem;
+    padding: 1rem;
+    margin-bottom:.5rem;
+  }
+  &-left,
+  &-price {
+    border-end-start-radius: 0.1rem;
+  }
+  &-left {
+    background-color: $very-pale-violet;
+    background-color: $moderate-violet-desat;
+    color: $moderate-violet;
+  }
+  &-right {
+    border-end-end-radius: 0.1rem;
+    background-color: white;
+    color: $dark-violet;
+    margin-left: auto;
+  }
+  &-price {
+    background-image: $gradient-background-msg;
+    color: $pale-violet;
+    max-width: 80%;
+    &-check {
+      background-color: transparent !important;
+      border: $very-dark-magenta 1px solid !important;
+      border-radius: 100% !important;
+    }
+     &-price{
+      color:$white ;
+  }
+  }
+  &-images{
+      display:flex;
+      margin-left: auto;
+      &-img{
+          width:4rem;
+          border-radius: 1rem;
+          margin-bottom:.5rem;
+      }
+      &-img:not(:last-child){
+        margin-right:.5rem;
+      }
+
+  }
+  
+}
