@@ -6,7 +6,7 @@ type MsgBubbleProps = {
 const MsgBubble: React.FC<MsgBubbleProps> = ({ bubbleStyle, children }) => {
   // const MsgBubble = ({style, children})=>{
 
-  return <div className={`msg-${bubbleStyle}`}>{children}</div>;
+  return <div className={`msg-bubble msg-${bubbleStyle}`}>{children}</div>;
 };
 type MsgBubblePriceProps = {
   item: string;

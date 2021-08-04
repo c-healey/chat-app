@@ -98,3 +98,21 @@
     border-radius: 6.25rem;
   }
 }
+.fade-in {
+  opacity: 0;
+  // transition: opacity .25s ease-in-out;
+  animation: fadeIn ease 5s;
+  animation-fill-mode: forwards;
+  
+}
+.delay-2{
+  animation-delay:2s
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}

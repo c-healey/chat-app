@@ -7,6 +7,16 @@ const Phone =()=>{
       "./images/dog-image-2.jpg",
       "./images/dog-image-3.jpg",
     ];
+    const msgs = [
+      <MsgBubble bubbleStyle={'left '}>That sounds great. I’d be happy with that.</MsgBubble>,
+      <MsgBubble bubbleStyle={'left '}>Could you send over some pictures of your dog, please?</MsgBubble>,
+      <MsgBubbleImgs images={imgArr}/>,
+      <MsgBubble bubbleStyle={'right'}>Here are a few pictures. She’s a happy girl!</MsgBubble>,
+      <MsgBubble bubbleStyle={'right'}>Can you make it?</MsgBubble>,
+      <MsgBubble bubbleStyle={'left'}>She looks so happy! The time we discussed walks. How long shall I take her out for?</MsgBubble>,
+      <MsgBubblePrice item={'30 minute walk'} price='29'/>,
+      <MsgBubblePrice item={'1 hour walk'} price='49'/>
+    ]
    return (
     <div className="phone d-flex direction-row w-50  shadow">
     <div className=" phone-header align-items-center ">
@@ -24,14 +34,12 @@ const Phone =()=>{
     </div>
     <div className="phone-body d-flex flex-column justify-content-between h-50 ">
       
-      <MsgBubble bubbleStyle={'left'}>That sounds great. I’d be happy with that.</MsgBubble>
-      <MsgBubble bubbleStyle={'left'}>Could you send over some pictures of your dog, please?</MsgBubble>
-      <MsgBubbleImgs images={imgArr}/>
-      <MsgBubble bubbleStyle={'right'}>Here are a few pictures. She’s a happy girl!</MsgBubble>
-      <MsgBubble bubbleStyle={'right'}>Can you make it?</MsgBubble>
-      <MsgBubble bubbleStyle={'left'}>She looks so happy! The time we discussed works. How long shall I take her out for?</MsgBubble>
-      <MsgBubblePrice item={'30 minute walk'} price='29'/>
-      <MsgBubblePrice item={'1 hour walk'} price='49'/>
+      
+      {msgs.map((msg, indx)=>{
+        const delay={animationDelay:`${indx}s`};
+      console.log(`${indx}s`)
+      return<div key={indx} className='fade-in' style={delay}>{msg}</div>
+      })}
      
   
       <div className="input-group  w-100">

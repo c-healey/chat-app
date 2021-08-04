@@ -8,6 +8,7 @@
     border-radius: 1.125rem;
     padding: 1rem;
     margin-bottom:.5rem;
+   
   }
   &-left,
   &-price {
@@ -47,6 +48,9 @@
       }
       &-img:not(:last-child){
         margin-right:.5rem;
+      }
+      &-img:first-child{
+        margin-left:auto;
       }
 
   }
